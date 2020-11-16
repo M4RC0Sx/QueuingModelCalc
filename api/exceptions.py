@@ -17,14 +17,14 @@ def custom_exception_handler(exc, context):
 
 class MissingParamsException(APIException):
 
-    status_code = 400  # Bad reuqest.
+    status_code = 400  # Bad request.
     default_detail = 'Some required parameters are missing. Check your request.'
     default_code = 'missing_params'
 
 
 class WrongParamsException(APIException):
 
-    status_code = 400  # Bad reuqest.
+    status_code = 400  # Bad request.
     default_detail = 'Some parameters were sent with an unacceptable value. Check your request.'
     default_code = 'wrong_params'
 
